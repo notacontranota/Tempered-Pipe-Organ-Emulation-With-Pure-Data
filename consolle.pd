@@ -1,48 +1,48 @@
-#N canvas 65 54 1301 714 10;
-#X obj 117 155 vsl 20 128 -40 60 0 0 s1 r1 16' 0 -9 0 10 -262144 -1
--1 0 1;
-#X obj 160 155 vsl 20 128 -40 60 0 0 s2 r2 16_1/3' 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 204 156 vsl 20 128 -40 60 0 1 s3 r3 8' 0 -9 0 10 -262144 -1
--1 0 1;
-#X obj 248 156 vsl 20 128 -40 60 0 1 s4 r4 4' 0 -9 0 10 -262144 -1
--1 0 1;
-#X obj 291 155 vsl 20 128 -40 60 0 0 s5 r5 2_2/3' 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 334 156 vsl 20 128 -40 60 0 0 s6 r6 2' 0 -9 0 10 -262144 -1
--1 0 1;
-#X obj 376 156 vsl 20 128 -40 60 0 0 s7 r7 1_3/5' 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 420 157 vsl 20 128 -40 60 0 0 s8 r8 1_1/3' 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 465 157 vsl 20 128 -40 60 0 0 s9 r9 1' 0 -9 0 10 -262144 -1
--1 0 1;
-#X floatatom 728 215 2 0 0 0 - - -;
-#X floatatom 773 214 2 0 0 0 - - -;
+#N canvas 406 111 1301 714 10;
+#X obj 117 155 vsl 20 128 -40 60 0 0 s1 s1_user 16' 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 160 155 vsl 20 128 -40 60 0 0 s2 s2_user 16_1/3' 0 -9 0 10 #fcfcfc
+#000000 #000000 1067 1;
+#X obj 204 156 vsl 20 128 -40 60 0 1 s3 s3_user 8' 0 -9 0 10 #fcfcfc
+#000000 #000000 12649 1;
+#X obj 248 156 vsl 20 128 -40 60 0 1 s4 s4_user 4' 0 -9 0 10 #fcfcfc
+#000000 #000000 2235 1;
+#X obj 291 155 vsl 20 128 -40 60 0 0 s5 s5_user 2_2/3' 0 -9 0 10 #fcfcfc
+#000000 #000000 7518 1;
+#X obj 334 156 vsl 20 128 -40 60 0 0 s6 s6_user 2' 0 -9 0 10 #fcfcfc
+#000000 #000000 2134 1;
+#X obj 376 156 vsl 20 128 -40 60 0 0 s7 s7_user 1_3/5' 0 -9 0 10 #fcfcfc
+#000000 #000000 11684 1;
+#X obj 420 157 vsl 20 128 -40 60 0 0 s8 s8_user 1_1/3' 0 -9 0 10 #fcfcfc
+#000000 #000000 1118 1;
+#X obj 465 157 vsl 20 128 -40 60 0 0 s9 s9_user 1' 0 -9 0 10 #fcfcfc
+#000000 #000000 382 1;
+#X floatatom 728 215 2 0 0 0 - - -, f 2;
+#X floatatom 773 214 2 0 0 0 - - -, f 2;
 #X obj 728 247 poly 7 1;
 #X obj 728 282 pack 0 0 0;
 #X obj 728 332 route 1 2 3 4 5 6 7;
 #X obj 457 384 unpack 0 0;
-#X floatatom 457 416 5 0 0 0 - - -;
-#X floatatom 514 415 5 0 0 0 - - -;
+#X floatatom 457 416 5 0 0 0 - - -, f 5;
+#X floatatom 514 415 5 0 0 0 - - -, f 5;
 #X obj 563 385 unpack 0 0;
-#X floatatom 563 417 5 0 0 0 - - -;
-#X floatatom 620 416 5 0 0 0 - - -;
+#X floatatom 563 417 5 0 0 0 - - -, f 5;
+#X floatatom 620 416 5 0 0 0 - - -, f 5;
 #X obj 669 384 unpack 0 0;
-#X floatatom 669 416 5 0 0 0 - - -;
-#X floatatom 726 415 5 0 0 0 - - -;
+#X floatatom 669 416 5 0 0 0 - - -, f 5;
+#X floatatom 726 415 5 0 0 0 - - -, f 5;
 #X obj 775 383 unpack 0 0;
-#X floatatom 775 415 5 0 0 0 - - -;
-#X floatatom 832 414 5 0 0 0 - - -;
+#X floatatom 775 415 5 0 0 0 - - -, f 5;
+#X floatatom 832 414 5 0 0 0 - - -, f 5;
 #X obj 883 382 unpack 0 0;
-#X floatatom 883 414 5 0 0 0 - - -;
-#X floatatom 940 413 5 0 0 0 - - -;
+#X floatatom 883 414 5 0 0 0 - - -, f 5;
+#X floatatom 940 413 5 0 0 0 - - -, f 5;
 #X obj 994 383 unpack 0 0;
-#X floatatom 994 415 5 0 0 0 - - -;
-#X floatatom 1051 414 5 0 0 0 - - -;
+#X floatatom 994 415 5 0 0 0 - - -, f 5;
+#X floatatom 1051 414 5 0 0 0 - - -, f 5;
 #X obj 1102 382 unpack 0 0;
-#X floatatom 1102 414 5 0 0 0 - - -;
-#X floatatom 1159 413 5 0 0 0 - - -;
+#X floatatom 1102 414 5 0 0 0 - - -, f 5;
+#X floatatom 1159 413 5 0 0 0 - - -, f 5;
 #X obj 759 511 /~ 7;
 #X obj 901 440 pipes;
 #X obj 728 179 inlet;

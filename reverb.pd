@@ -1,4 +1,4 @@
-#N canvas 65 54 1301 714 10;
+#N canvas 434 228 1301 714 10;
 #X obj 460 532 freeverb~;
 #X msg 576 449 roomsize \$1;
 #X msg 662 449 damping \$1;
@@ -7,18 +7,18 @@
 #X obj 461 451 inlet~;
 #X obj 459 592 outlet~;
 #X obj 512 591 outlet~;
-#X obj 134 142 vsl 30 100 0 127 0 1 s_room r_room roomsize 0 -9 0 10
--262144 -1 -1 6900 1;
-#X floatatom 576 416 5 0 0 0 - - -;
-#X obj 199 142 vsl 30 100 0 128 0 1 s_damping r_damping damping 0 -9
-0 10 -262144 -1 -1 3480 1;
-#X floatatom 662 414 5 0 0 0 - - -;
-#X obj 265 143 vsl 30 100 0 128 0 1 s_wet r_wet wet 0 -9 0 10 -262144
--1 -1 4409 1;
-#X floatatom 747 414 5 0 0 0 - - -;
-#X obj 330 144 vsl 30 100 0 128 0 1 s_dry r_dry dry 0 -9 0 10 -262144
--1 -1 8895 1;
-#X floatatom 810 413 5 0 0 0 - - -;
+#X obj 134 142 vsl 30 100 0 127 0 1 s_room s_room_user roomsize 0 -9
+0 10 #fcfcfc #000000 #000000 5223 1;
+#X floatatom 576 416 5 0 0 0 - - -, f 5;
+#X obj 199 142 vsl 30 100 0 128 0 1 s_damping s_damping_user damping
+0 -9 0 10 #fcfcfc #000000 #000000 1470 1;
+#X floatatom 662 414 5 0 0 0 - - -, f 5;
+#X obj 265 143 vsl 30 100 0 128 0 1 s_wet s_wet_user wet 0 -9 0 10
+#fcfcfc #000000 #000000 1547 1;
+#X floatatom 747 414 5 0 0 0 - - -, f 5;
+#X obj 330 144 vsl 30 100 0 128 0 1 s_dry s_dry_user dry 0 -9 0 10
+#fcfcfc #000000 #000000 3480 1;
+#X floatatom 810 413 5 0 0 0 - - -, f 5;
 #X msg 337 449 bypass \$1;
 #X obj 661 157 ctlin 91 1;
 #X obj 748 157 ctlin 93 1;
@@ -28,8 +28,8 @@
 #X obj 662 377 / 63.4;
 #X obj 747 377 / 127;
 #X obj 810 376 / 127;
-#X obj 337 416 tgl 15 1 empty empty empty 17 7 0 10 -262144 -1 -1 0
-64;
+#X obj 337 416 tgl 15 1 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
 #X obj 337 345 ctlin 10 1;
 #X obj 337 380 loadbang;
 #X obj 748 189 s r_damping;
@@ -52,6 +52,7 @@ factor \, the wet and the dry amounts.;
 #X text 959 659 Project: Pipe Organ Emulation with Pure Data;
 #X text 966 675 Author: Nicola Simoni (nicola.simoni.89@gmail.com)
 ;
+#X obj 230 390 r s_reverb_on;
 #X connect 0 0 40 0;
 #X connect 0 1 41 0;
 #X connect 1 0 0 0;
@@ -74,7 +75,6 @@ factor \, the wet and the dry amounts.;
 #X connect 23 0 13 0;
 #X connect 24 0 15 0;
 #X connect 25 0 16 0;
-#X connect 26 0 27 0;
 #X connect 27 0 25 0;
 #X connect 31 0 22 0;
 #X connect 32 0 23 0;
@@ -82,4 +82,5 @@ factor \, the wet and the dry amounts.;
 #X connect 35 0 21 0;
 #X connect 40 0 6 0;
 #X connect 41 0 7 0;
+#X connect 44 0 25 0;
 #X coords 0 -1 1 1 300 160 1 100 100;

@@ -1,9 +1,9 @@
 #N canvas 164 164 1027 378 10;
-#X obj 127 137 vsl 30 128 1.27 127 0 1 s_vol r_vol volume 0 -9 0 10
--262144 -1 -1 12700 1;
+#X obj 127 137 vsl 30 128 1.27 127 0 1 s_vol s_vol_usu volume 0 -9
+0 10 #fcfcfc #000000 #000000 12700 1;
 #X obj 334 241 *~;
 #X obj 390 240 *~;
-#X floatatom 468 182 5 0 0 0 - - -;
+#X floatatom 468 182 5 0 0 0 - - -, f 5;
 #X obj 468 145 / 127;
 #X obj 468 108 r s_vol;
 #X obj 703 154 ctlin 7 1;

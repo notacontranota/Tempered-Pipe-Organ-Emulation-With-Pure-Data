@@ -1,8 +1,8 @@
 #N canvas 65 92 1301 686 10;
-#X floatatom 364 137 5 0 0 0 - - -;
-#X floatatom 414 137 5 0 0 0 - - -;
-#X floatatom 462 137 5 0 0 0 - - -;
-#X floatatom 574 137 5 0 0 0 - - -;
+#X floatatom 364 137 5 0 0 0 - - -, f 5;
+#X floatatom 414 137 5 0 0 0 - - -, f 5;
+#X floatatom 462 137 5 0 0 0 - - -, f 5;
+#X floatatom 574 137 5 0 0 0 - - -, f 5;
 #X obj 364 105 r sa;
 #X obj 462 105 r ss;
 #X obj 414 105 r sd;
@@ -15,14 +15,14 @@
 #X obj 529 105 inlet;
 #X obj 529 137 sel 0;
 #X obj 367 357 outlet~;
-#X obj 125 158 vsl 15 128 0 300 0 1 sa empty A 0 -9 0 10 -262144 -1
--1 500 1;
-#X obj 153 157 vsl 15 128 0 500 0 1 sd empty D 0 -9 0 10 -262144 -1
--1 0 1;
-#X obj 180 157 vsl 15 128 0 1 0 1 ss empty S 0 -9 0 10 -262144 -1 -1
-12700 1;
-#X obj 209 157 vsl 15 128 0 1000 0 1 sr empty R 0 -9 0 10 -262144 -1
--1 700 1;
+#X obj 125 158 vsl 15 128 0 300 0 1 sa empty A 0 -9 0 10 #fcfcfc #000000
+#000000 500 1;
+#X obj 153 157 vsl 15 128 0 500 0 1 sd empty D 0 -9 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 180 157 vsl 15 128 0 1 0 1 ss empty S 0 -9 0 10 #fcfcfc #000000
+#000000 12700 1;
+#X obj 209 157 vsl 15 128 0 1000 0 1 sr empty R 0 -9 0 10 #fcfcfc #000000
+#000000 700 1;
 #X obj 289 105 inlet;
 #X text 292 83 Note;
 #X text 531 83 Velocity;
@@ -43,7 +43,9 @@ when we play a note.;
 #X text 938 612 Project: Pipe Organ Emulation with Pure Data;
 #X text 944 628 Author: Nicola Simoni (nicola.simoni.89@gmail.com)
 ;
-#X text 941 629;
+#X text 941 629 comment;
+#X obj 500 35 r s_panic;
+#X msg 500 65 0;
 #X connect 0 0 8 1;
 #X connect 1 0 8 2;
 #X connect 2 0 8 3;
@@ -62,4 +64,6 @@ when we play a note.;
 #X connect 14 0 10 0;
 #X connect 20 0 27 0;
 #X connect 27 0 8 0;
+#X connect 31 0 32 0;
+#X connect 32 0 14 0;
 #X coords 0 -1 1 1 150 200 1 100 100;

@@ -1,7 +1,7 @@
 #N canvas 241 157 803 518 10;
 #X obj 230 323 inlet~;
-#X obj 111 139 hsl 128 15 0 127 0 1 s_lfo r_lfo LFO_frequency -2 -8
-0 10 -262144 -1 -1 0 1;
+#X obj 111 139 hsl 128 15 0 127 0 1 s_lfo s_lfo_user LFO_frequency
+-2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 322 260 osc~;
 #X obj 321 299 *~ 0.5;
 #X obj 269 457 outlet~;

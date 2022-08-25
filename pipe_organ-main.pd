@@ -34,7 +34,7 @@
 #X connect 3 0 5 0;
 #X connect 4 0 5 0;
 #X restore 290 760 pd diapasel;
-#N canvas 735 25 450 340 key 0;
+#N canvas 735 25 450 451 key 0;
 #X obj 20 -20 keyname;
 #X symbolatom 20 10 10 0 0 0 - - -, f 10;
 #X msg 20 59 0;
@@ -64,6 +64,9 @@
 #X msg 348 233 5;
 #X obj 198 283 s tasti;
 #X obj 20 184 sel q w e r t y u i o p [ ], f 64;
+#X obj 20 320 sel Escape;
+#X msg 20 345 bang;
+#X obj 20 370 s r_panic;
 #X connect 0 1 1 0;
 #X connect 1 0 11 0;
 #X connect 2 0 4 0;
@@ -111,6 +114,9 @@
 #X connect 28 9 24 0;
 #X connect 28 10 25 0;
 #X connect 28 11 26 0;
+#X connect 28 12 29 0;
+#X connect 29 0 30 0;
+#X connect 30 0 31 0;
 #X restore 289 790 pd key;
 #X msg 160 720 \; pd dsp 1 \; r_diapasel 0 \; r_temp-sel 5 \; r_reverb_on
 0 \; r_vol 127 \; r_room 90 \; r_damping 20 \; r_wet 90 \; r_dry 110

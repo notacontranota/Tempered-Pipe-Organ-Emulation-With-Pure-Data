@@ -118,10 +118,10 @@
 #X connect 29 0 30 0;
 #X connect 30 0 31 0;
 #X restore 289 790 pd key;
-#X msg 160 720 \; pd dsp 1 \; r_diapasel 0 \; r_temp-sel 5 \; r_reverb_on
-0 \; r_vol 127 \; r_room 90 \; r_damping 20 \; r_wet 90 \; r_dry 110
-\; r3 60 \; r6 -20;
-#X obj 160 690 del 2000;
+#X msg 160 740 \; pd dsp 1 \; r_sommatore 1 \; r_diapasel 0 \; r_temp-sel
+5 \; r_reverb_on 0 \; r_vol 127 \; r_room 90 \; r_damping 20 \; r_wet
+90 \; r_dry 110 \; r3 60 \; r6 -20;
+#X obj 160 700 del 10;
 #X connect 0 0 10 0;
 #X connect 0 1 8 1;
 #X connect 1 0 7 0;

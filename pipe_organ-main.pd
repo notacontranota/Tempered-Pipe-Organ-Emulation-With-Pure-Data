@@ -1,4 +1,4 @@
-#N canvas 8 32 532 875 10;
+#N canvas 8 32 532 922 10;
 #X obj 30 140 notein 1;
 #X obj 31 480 reverb;
 #X obj 30 20 pddp/dsp;
@@ -112,9 +112,10 @@
 #X connect 28 10 25 0;
 #X connect 28 11 26 0;
 #X restore 289 790 pd key;
-#X msg 160 690 \; pd dsp 1 \; r_diapasel 0 \; r_temp-sel 5 \; r_reverb_on
+#X msg 160 720 \; pd dsp 1 \; r_diapasel 0 \; r_temp-sel 5 \; r_reverb_on
 0 \; r_vol 127 \; r_room 90 \; r_damping 20 \; r_wet 90 \; r_dry 110
-\; tasti 3 \; tastireg 5;
+\; r3 60 \; r6 -20;
+#X obj 160 690 del 2000;
 #X connect 0 0 10 0;
 #X connect 0 1 8 1;
 #X connect 1 0 7 0;
@@ -124,5 +125,6 @@
 #X connect 7 1 6 1;
 #X connect 8 0 3 0;
 #X connect 10 0 8 0;
-#X connect 12 0 20 0;
+#X connect 12 0 21 0;
+#X connect 21 0 20 0;
 #X coords 0 -1 1 1 176 50 2 100 100;

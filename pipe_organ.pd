@@ -28,7 +28,7 @@
 0;
 #X floatatom 200 90 5 400 460 0 A4: r_diapason s_diapason, f 5;
 #X obj 50 156 vradio 15 0 0 9 s_temp-sel r_temp-sel empty 0 -8 0 10
-#fcfcfc #000000 #000000 5;
+#fcfcfc #000000 #000000 8;
 #X text 70 215 Equal Tempered;
 #X text 70 185 Aaron 1/4 comma;
 #X text 70 230 Kirnberger III;
@@ -105,6 +105,6 @@
 #X obj 615 120 tgl 15 0 s_reverb_on r_reverb_on off 17 7 0 10 #fcfcfc
 #000000 #000000 0 1;
 #X obj 192 120 hradio 15 0 0 3 s_diapasel r_diapasel A4\ 415|432|440:
--91 8 0 10 #fcfcfc #ff9300 #000000 0;
-#X obj 222 61 bng 15 250 50 0 s_panic r_panic panic -34 7 0 10 #fcfcfc
+-91 8 0 10 #fcfcfc #ff9300 #000000 2;
+#X obj 222 61 bng 15 250 50 0 s_panic r_panic panic -34 7 0 10 #ffffff
 #ff9300 #000000;

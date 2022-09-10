@@ -1,4 +1,4 @@
-#N canvas 25 32 537 956 10;
+#N canvas 25 872 537 956 10;
 #X obj 30 140 notein 1;
 #X obj 31 480 reverb;
 #X obj 30 20 pddp/dsp;
@@ -12,8 +12,8 @@
 #X obj 30 170 tuner;
 #X obj 290 730 temperaments;
 #X obj 160 660 loadbang;
-#X obj 101 101 cnv 15 174 48 empty empty Tempered\ Pipe\\\\\ Organ
-7 6 0 14 #ffd479 #ff9300 0;
+#X obj 101 101 cnv 15 174 48 empty empty Tempered\ Pipe\ Organ 7 6
+0 14 #ffd479 #ff9300 0;
 #X text 141 121 by Nicola Simoni;
 #X text 146 133 & Pablo Herrera;
 #X text 210 24 Authors: Nicola Simoni (nicola.simoni.89@gmail.com)
@@ -371,7 +371,7 @@
 #X connect 73 0 74 0;
 #X connect 74 0 72 0;
 #X restore 288 822 pd MIDI shortcuts;
-#X msg 160 740 \; pd dsp 1 \; r_sommatore 1 \; r_diapasel 0 \; r_temp-sel
+#X msg 160 740 \; pd dsp 1 \; r_sommatore 1 \; r_diapasel 2 \; r_temp-sel
 5 \; r_reverb_on 0 \; r_vol 127 \; r_room 90 \; r_damping 20 \; r_wet
 90 \; r_dry 110 \; tasti 0;
 #X connect 0 0 10 0;

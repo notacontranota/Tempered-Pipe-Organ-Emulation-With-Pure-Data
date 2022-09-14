@@ -1,11 +1,11 @@
-#N canvas 138 46 383 384 12;
+#N canvas 1142 880 383 384 12;
 #X floatatom 60 20 5 -100 100 0 C r_c s_c, f 5;
 #X floatatom 60 50 5 -100 100 0 C#/Db r_cs s_cs, f 5;
 #X floatatom 60 80 5 -100 100 0 D r_d s_d, f 5;
 #X floatatom 60 110 5 -100 100 0 D#/Eb r_ds s_ds, f 5;
 #X floatatom 60 140 5 -100 100 0 E r_e s_e, f 5;
 #X floatatom 60 170 5 -100 100 0 F r_f s_f, f 5;
-#X floatatom 60 200 5 -100 100 0 F#/Gb r_rs s_fs, f 5;
+#X floatatom 60 200 5 -100 100 0 F#/Gb r_fs s_fs, f 5;
 #X floatatom 60 230 5 -100 100 0 G r_g s_g, f 5;
 #X floatatom 60 260 5 -100 100 0 G#/Ab r_gs s_gs, f 5;
 #X floatatom 60 290 5 -100 100 0 A r_a s_a, f 5;

@@ -1,4 +1,4 @@
-#N canvas 25 96 537 956 10;
+#N canvas 23 840 556 973 10;
 #X obj 30 140 notein 1;
 #X obj 31 480 reverb;
 #X obj 30 20 pddp/dsp;
@@ -8,17 +8,15 @@
 #X obj 30 844 dac~;
 #X obj 31 652 out;
 #X obj 30 200 consolle;
-#X text 210 10 Project: Pipe Organ Emulation with Pure Data;
 #X obj 30 170 tuner;
 #X obj 290 730 temperaments;
 #X obj 160 660 loadbang;
-#X obj 101 101 cnv 15 174 48 empty empty Órgano\ Temperado 19 7 0
-14 #ffd479 #ff9300 0;
+#X obj 101 101 cnv 15 174 48 empty empty Órgano\\\ Temperado 19 7
+0 14 #ffd479 #ff9300 0;
 #X text 146 133 & Pablo Herrera;
 #X text 210 24 Authors: Nicola Simoni (nicola.simoni.89@gmail.com)
 ;
-#X text 262 40 & Pablo Herrera;
-#N canvas 735 25 150 165 diapasel 0;
+#N canvas 628 1228 150 165 diapasel 0;
 #X obj 20 10 r s_diapasel;
 #X obj 20 50 sel 0 1 2;
 #X msg 5 90 415;
@@ -34,9 +32,9 @@
 #X connect 4 0 5 0;
 #X restore 290 760 pd diapasel;
 #X obj 160 700 del 10;
-#N canvas 735 25 450 451 shortcuts 0;
+#N canvas 626 1175 450 451 shortcuts 0;
 #X obj 20 -20 keyname;
-#X symbolatom 20 10 10 0 0 0 - - -, f 10;
+#X symbolatom 20 10 10 0 0 0 - - - 0;
 #X msg 20 59 0;
 #X msg 50 60 1;
 #X obj 10 120 s r_temp-sel;
@@ -48,7 +46,7 @@
 #X msg 230 60 7;
 #X obj 20 34 sel F1 F2 F3 F4 F5 F6 F7 F8 F9;
 #X msg 260 60 8;
-#X symbolatom 20 160 10 0 0 0 - - -, f 10;
+#X symbolatom 20 160 10 0 0 0 - - - 0;
 #X msg 18 233 0;
 #X msg 48 234 1;
 #X msg 78 234 2;
@@ -118,14 +116,14 @@
 #X connect 29 0 30 0;
 #X connect 30 0 31 0;
 #X restore 289 790 pd shortcuts;
-#N canvas 1237 1270 550 439 MIDI 0;
-#X floatatom 20 53 5 0 0 0 - - -, f 5;
+#N canvas 530 1274 550 439 MIDI 0;
+#X floatatom 20 53 5 0 0 0 - - - 0;
 #N canvas 735 1176 100 159 mtor 0;
 #X obj 15 10 inlet;
 #X obj 15 33 * 100;
 #X obj 15 56 / 127;
 #X obj 15 79 - 40;
-#X floatatom 15 102 5 0 0 0 - - -, f 5;
+#X floatatom 15 102 5 0 0 0 - - - 0;
 #X obj 15 124 outlet;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -134,13 +132,13 @@
 #X connect 4 0 5 0;
 #X restore 20 75 pd mtor;
 #X obj 20 98 s r1;
-#X floatatom 78 52 5 0 0 0 - - -, f 5;
+#X floatatom 78 52 5 0 0 0 - - - 0;
 #N canvas 735 1176 100 159 mtor 0;
 #X obj 15 10 inlet;
 #X obj 15 33 * 100;
 #X obj 15 56 / 127;
 #X obj 15 79 - 40;
-#X floatatom 15 102 5 0 0 0 - - -, f 5;
+#X floatatom 15 102 5 0 0 0 - - - 0;
 #X obj 15 124 outlet;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -148,13 +146,13 @@
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
 #X restore 78 74 pd mtor;
-#X floatatom 135 52 5 0 0 0 - - -, f 5;
+#X floatatom 135 52 5 0 0 0 - - - 0;
 #N canvas 735 1176 100 159 mtor 0;
 #X obj 15 10 inlet;
 #X obj 15 33 * 100;
 #X obj 15 56 / 127;
 #X obj 15 79 - 40;
-#X floatatom 15 102 5 0 0 0 - - -, f 5;
+#X floatatom 15 102 5 0 0 0 - - - 0;
 #X obj 15 124 outlet;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -162,13 +160,13 @@
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
 #X restore 135 74 pd mtor;
-#X floatatom 193 51 5 0 0 0 - - -, f 5;
+#X floatatom 193 51 5 0 0 0 - - - 0;
 #N canvas 735 1176 100 159 mtor 0;
 #X obj 15 10 inlet;
 #X obj 15 33 * 100;
 #X obj 15 56 / 127;
 #X obj 15 79 - 40;
-#X floatatom 15 102 5 0 0 0 - - -, f 5;
+#X floatatom 15 102 5 0 0 0 - - - 0;
 #X obj 15 124 outlet;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -177,13 +175,13 @@
 #X connect 4 0 5 0;
 #X restore 193 73 pd mtor;
 #X obj 193 96 s r4;
-#X floatatom 246 50 5 0 0 0 - - -, f 5;
+#X floatatom 246 50 5 0 0 0 - - - 0;
 #N canvas 735 1176 100 159 mtor 0;
 #X obj 15 10 inlet;
 #X obj 15 33 * 100;
 #X obj 15 56 / 127;
 #X obj 15 79 - 40;
-#X floatatom 15 102 5 0 0 0 - - -, f 5;
+#X floatatom 15 102 5 0 0 0 - - - 0;
 #X obj 15 124 outlet;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -191,13 +189,13 @@
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
 #X restore 246 72 pd mtor;
-#X floatatom 304 49 5 0 0 0 - - -, f 5;
+#X floatatom 304 49 5 0 0 0 - - - 0;
 #N canvas 735 1176 100 159 mtor 0;
 #X obj 15 10 inlet;
 #X obj 15 33 * 100;
 #X obj 15 56 / 127;
 #X obj 15 79 - 40;
-#X floatatom 15 102 5 0 0 0 - - -, f 5;
+#X floatatom 15 102 5 0 0 0 - - - 0;
 #X obj 15 124 outlet;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -206,13 +204,13 @@
 #X connect 4 0 5 0;
 #X restore 304 71 pd mtor;
 #X obj 304 25 ctlin 5;
-#X floatatom 357 48 5 0 0 0 - - -, f 5;
+#X floatatom 357 48 5 0 0 0 - - - 0;
 #N canvas 735 1176 100 159 mtor 0;
 #X obj 15 10 inlet;
 #X obj 15 33 * 100;
 #X obj 15 56 / 127;
 #X obj 15 79 - 40;
-#X floatatom 15 102 5 0 0 0 - - -, f 5;
+#X floatatom 15 102 5 0 0 0 - - - 0;
 #X obj 15 124 outlet;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -220,13 +218,13 @@
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
 #X restore 357 70 pd mtor;
-#X floatatom 415 47 5 0 0 0 - - -, f 5;
+#X floatatom 415 47 5 0 0 0 - - - 0;
 #N canvas 735 1176 100 159 mtor 0;
 #X obj 15 10 inlet;
 #X obj 15 33 * 100;
 #X obj 15 56 / 127;
 #X obj 15 79 - 40;
-#X floatatom 15 102 5 0 0 0 - - -, f 5;
+#X floatatom 15 102 5 0 0 0 - - - 0;
 #X obj 15 124 outlet;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -236,13 +234,13 @@
 #X restore 415 69 pd mtor;
 #X obj 357 93 s r7;
 #X obj 415 92 s r8;
-#X floatatom 472 46 5 0 0 0 - - -, f 5;
+#X floatatom 472 46 5 0 0 0 - - - 0;
 #N canvas 735 1176 100 159 mtor 0;
 #X obj 15 10 inlet;
 #X obj 15 33 * 100;
 #X obj 15 56 / 127;
 #X obj 15 79 - 40;
-#X floatatom 15 102 5 0 0 0 - - -, f 5;
+#X floatatom 15 102 5 0 0 0 - - - 0;
 #X obj 15 124 outlet;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -296,7 +294,6 @@
 #X obj 298 165 s r_dry;
 #X text 371 125 Temperaments;
 #X obj 376 142 ctlin 21;
-#X obj 376 165 * 8;
 #X obj 376 188 / 127;
 #X obj 376 211 s r_temp-sel;
 #X obj 461 187 / 127;
@@ -305,6 +302,7 @@
 #X obj 461 210 s r_root;
 #X text 22 126 LFO;
 #X obj 21 167 s r_lfo;
+#X obj 376 165 * 8;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 3 0 4 0;
@@ -350,7 +348,7 @@
 #X connect 44 3 39 0;
 #X connect 44 4 40 0;
 #X connect 44 5 41 0;
-#X connect 45 0 77 0;
+#X connect 45 0 76 0;
 #X connect 50 0 0 0;
 #X connect 51 0 3 0;
 #X connect 52 0 5 0;
@@ -363,18 +361,21 @@
 #X connect 60 0 64 0;
 #X connect 61 0 65 0;
 #X connect 62 0 66 0;
-#X connect 68 0 69 0;
+#X connect 68 0 77 0;
 #X connect 69 0 70 0;
-#X connect 70 0 71 0;
-#X connect 72 0 75 0;
-#X connect 73 0 74 0;
-#X connect 74 0 72 0;
+#X connect 71 0 74 0;
+#X connect 72 0 73 0;
+#X connect 73 0 71 0;
+#X connect 77 0 69 0;
 #X restore 288 822 pd MIDI shortcuts;
-#X msg 160 740 \; pd dsp 1 \; r_sommatore 1 \; r_diapasel 2 \; r_temp-sel
-5 \; r_reverb_on 0 \; r_vol 127 \; r_room 90 \; r_damping 20 \; r_wet
-90 \; r_dry 110 \; tasti 0;
 #X text 152 121 Nicola Simoni;
-#X connect 0 0 10 0;
+#X text 210 10 Project: Tempered Pipe Organ Emulation with Pure Data
+;
+#X text 262 40 & Pablo Herrera (notacontranota@gmail.com);
+#X msg 160 740 \; pd dsp 1 \; r_diapasel 2 \; r_temp-sel 4 \; r_root
+0 \; r_reverb_on 0 \; r_vol 127 \; r_room 90 \; r_damping 20 \; r_wet
+90 \; r_dry 110 \; tasti 0;
+#X connect 0 0 9 0;
 #X connect 0 1 8 1;
 #X connect 1 0 7 0;
 #X connect 1 1 7 1;
@@ -382,7 +383,7 @@
 #X connect 7 0 6 0;
 #X connect 7 1 6 1;
 #X connect 8 0 3 0;
-#X connect 10 0 8 0;
-#X connect 12 0 18 0;
-#X connect 18 0 21 0;
+#X connect 9 0 8 0;
+#X connect 11 0 16 0;
+#X connect 16 0 22 0;
 #X coords 0 -1 1 1 176 50 2 100 100;

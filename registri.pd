@@ -1,41 +1,41 @@
-#N canvas 65 54 1301 714 10;
+#N canvas 619 869 1301 789 10;
 #X obj -1040 118 tgl 15 1 s_principale16 r_principale16 principale_16'
-0 -10 0 10 -262144 -1 -1 0 1;
-#X obj -945 118 tgl 15 1 s_corno r_corno corno_inglese 0 -10 0 10 -262144
--1 -1 0 1;
+0 -10 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj -945 118 tgl 15 1 s_corno r_corno corno_inglese 0 -10 0 10 #fcfcfc
+#000000 #000000 0 1;
 #X obj -861 118 tgl 15 1 s_fagotto16 r_fagotto16 fagotto_16' 0 -10
-0 10 -262144 -1 -1 0 1;
+0 10 #fcfcfc #000000 #000000 0 1;
 #X obj -770 118 tgl 15 1 s_principale8 r_principale8 principale_8'
-0 -10 0 10 -262144 -1 -1 0 1;
-#X obj -667 118 tgl 15 1 s_ottava4 r_ottava4 ottava_4' 0 -10 0 10 -262144
--1 -1 0 1;
-#X obj -571 118 tgl 15 1 s_tromba8 r_tromba8 tromba_8' 0 -10 0 10 -262144
--1 -1 0 1;
+0 -10 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj -667 118 tgl 15 1 s_ottava4 r_ottava4 ottava_4' 0 -10 0 10 #fcfcfc
+#000000 #000000 1 1;
+#X obj -571 118 tgl 15 1 s_tromba8 r_tromba8 tromba_8' 0 -10 0 10 #fcfcfc
+#000000 #000000 0 1;
 #X obj -471 118 tgl 15 1 s_violabassi4 r_violabassi4 viola_bassi_4'
-0 -10 0 10 -262144 -1 -1 0 1;
-#X obj -364 118 tgl 15 1 s_flauto4 r_flauto4 flauto_4' 0 -10 0 10 -262144
--1 -1 0 1;
+0 -10 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj -364 118 tgl 15 1 s_flauto4 r_flauto4 flauto_4' 0 -10 0 10 #fcfcfc
+#000000 #000000 0 1;
 #X obj -270 118 tgl 15 1 s_ottavino r_ottavino ottavino 0 -10 0 10
--262144 -1 -1 0 1;
+#fcfcfc #000000 #000000 0 1;
 #X obj -168 118 tgl 15 1 s_duodecima r_duodecima duodecima 0 -10 0
-10 -262144 -1 -1 0 1;
-#X obj -64 118 tgl 15 1 s_cornetto r_cornetto cornetto 0 -10 0 10 -262144
--1 -1 0 1;
-#X obj 25 118 tgl 15 1 s_voce r_voce voce 0 -10 0 10 -262144 -1 -1
-0 1;
-#X obj 113 118 tgl 15 1 s_tromboni r_tromboni tromboni 0 -10 0 10 -262144
--1 -1 0 1;
-#X floatatom -638 574 5 0 0 0 - - -;
-#X floatatom -595 574 5 0 0 0 - - -;
-#X floatatom -553 574 5 0 0 0 - - -;
-#X floatatom -511 574 5 0 0 0 - - -;
-#X floatatom -469 574 5 0 0 0 - - -;
-#X floatatom -427 574 5 0 0 0 - - -;
-#X floatatom -384 574 5 0 0 0 - - -;
-#X floatatom -340 574 5 0 0 0 - - -;
-#X floatatom -297 574 5 0 0 0 - - -;
+10 #fcfcfc #000000 #000000 0 1;
+#X obj -64 118 tgl 15 1 s_cornetto r_cornetto cornetto 0 -10 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 25 118 tgl 15 1 s_voce r_voce voce 0 -10 0 10 #fcfcfc #000000
+#000000 1 1;
+#X obj 113 118 tgl 15 1 s_tromboni r_tromboni tromboni 0 -10 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X floatatom -638 574 5 0 0 0 - - -, f 5;
+#X floatatom -595 574 5 0 0 0 - - -, f 5;
+#X floatatom -553 574 5 0 0 0 - - -, f 5;
+#X floatatom -511 574 5 0 0 0 - - -, f 5;
+#X floatatom -469 574 5 0 0 0 - - -, f 5;
+#X floatatom -427 574 5 0 0 0 - - -, f 5;
+#X floatatom -384 574 5 0 0 0 - - -, f 5;
+#X floatatom -340 574 5 0 0 0 - - -, f 5;
+#X floatatom -297 574 5 0 0 0 - - -, f 5;
 #N canvas 496 321 450 300 fagotto16 0;
-#X floatatom -905 66 5 0 0 0 - - -;
+#X floatatom -905 66 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
 #X obj -905 232 outlet;
@@ -67,7 +67,7 @@
 #X connect 14 0 0 0;
 #X restore -812 173 pd fagotto16;
 #N canvas 497 433 450 300 flauto4 0;
-#X floatatom -905 66 5 0 0 0 - - -;
+#X floatatom -905 66 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
 #X obj -905 232 outlet;
@@ -109,7 +109,7 @@
 #X obj -340 607 s r8;
 #X obj -297 607 s r9;
 #N canvas 525 374 450 300 corno 0;
-#X floatatom -905 66 5 0 0 0 - - -;
+#X floatatom -905 66 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
 #X obj -905 232 outlet;
@@ -141,7 +141,7 @@
 #X connect 14 0 2 0;
 #X restore -885 173 pd corno;
 #N canvas 749 349 450 300 principale8 0;
-#X floatatom -905 66 5 0 0 0 - - -;
+#X floatatom -905 66 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
 #X obj -905 232 outlet;
@@ -172,8 +172,8 @@
 #X connect 13 0 2 0;
 #X connect 14 0 0 0;
 #X restore -719 173 pd principale8;
-#N canvas 642 216 450 300 principale16 0;
-#X floatatom -905 66 5 0 0 0 - - -;
+#N canvas 1126 956 450 325 principale16 0;
+#X floatatom -905 75 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
 #X obj -905 232 outlet;
@@ -187,7 +187,10 @@
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
 #X msg -886 131 10 0 -10 -30 -40 -40 -40 -40 -40;
-#X obj -905 33 r s_principale16;
+#X obj -905 10 r s_principale16;
+#X obj -890 33 r bg;
+#X obj -890 53 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
 #X connect 1 1 13 0;
@@ -203,9 +206,11 @@
 #X connect 12 0 2 0;
 #X connect 13 0 2 0;
 #X connect 14 0 0 0;
+#X connect 15 0 16 0;
+#X connect 16 0 0 0;
 #X restore -996 173 pd principale16;
 #N canvas 497 451 450 300 ottava4 0;
-#X floatatom -905 66 5 0 0 0 - - -;
+#X floatatom -905 66 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
 #X obj -905 232 outlet;
@@ -237,7 +242,7 @@
 #X connect 14 0 2 0;
 #X restore -616 173 pd ottava4;
 #N canvas 627 468 450 300 tromba8 0;
-#X floatatom -905 66 5 0 0 0 - - -;
+#X floatatom -905 66 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
 #X obj -905 232 outlet;
@@ -269,7 +274,7 @@
 #X connect 14 0 2 0;
 #X restore -537 173 pd tromba8;
 #N canvas 516 374 450 300 violab4 0;
-#X floatatom -905 66 5 0 0 0 - - -;
+#X floatatom -905 66 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
 #X obj -905 232 outlet;
@@ -301,7 +306,7 @@
 #X connect 14 0 2 0;
 #X restore -460 173 pd violab4;
 #N canvas 552 430 450 300 ottavino 0;
-#X floatatom -905 66 5 0 0 0 - - -;
+#X floatatom -905 66 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
 #X obj -905 232 outlet;
@@ -333,7 +338,7 @@
 #X connect 14 0 2 0;
 #X restore -296 173 pd ottavino;
 #N canvas 632 419 450 300 ddecima 0;
-#X floatatom -895 76 5 0 0 0 - - -;
+#X floatatom -895 76 5 0 0 0 - - -, f 5;
 #X obj -895 112 sel 0 1;
 #X obj -895 205 unpack f f f f f f f f f;
 #X obj -895 242 outlet;
@@ -365,7 +370,7 @@
 #X connect 14 0 2 0;
 #X restore -207 173 pd ddecima;
 #N canvas 622 446 450 300 cornetto 0;
-#X floatatom -905 66 5 0 0 0 - - -;
+#X floatatom -905 66 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
 #X obj -905 232 outlet;
@@ -397,7 +402,7 @@
 #X connect 14 0 2 0;
 #X restore -125 173 pd cornetto;
 #N canvas 299 313 450 300 voce 0;
-#X floatatom -905 66 5 0 0 0 - - -;
+#X floatatom -905 66 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
 #X obj -905 232 outlet;
@@ -429,7 +434,7 @@
 #X connect 14 0 0 0;
 #X restore -39 173 pd voce;
 #N canvas 525 489 450 300 tromboni 0;
-#X floatatom -905 66 5 0 0 0 - - -;
+#X floatatom -905 66 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
 #X obj -905 232 outlet;

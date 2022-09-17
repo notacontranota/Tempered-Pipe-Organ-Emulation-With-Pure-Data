@@ -1,4 +1,4 @@
-#N canvas 1142 880 383 384 12;
+#N canvas 1116 887 383 384 12;
 #X floatatom 60 20 5 -100 100 0 C r_c s_c, f 5;
 #X floatatom 60 50 5 -100 100 0 C#/Db r_cs s_cs, f 5;
 #X floatatom 60 80 5 -100 100 0 D r_d s_d, f 5;

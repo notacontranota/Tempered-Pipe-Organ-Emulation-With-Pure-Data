@@ -1,10 +1,10 @@
-#N canvas 259 36 725 610 12;
+#N canvas 739 52 725 637 12;
 #X obj 531 11 cnv 15 180 54 empty empty empty 20 12 0 14 #ff9300 #404040
 0;
 #X obj 533 13 pipe_organ-main;
-#X obj 167 382 cnv 15 544 208 empty empty empty 20 12 0 14 #ff9300
+#X obj 167 382 cnv 15 544 238 empty empty empty 20 12 0 14 #ff9300
 #404040 0;
-#X obj 8 382 cnv 15 152 208 empty empty empty 20 12 0 14 #ff9300 #404040
+#X obj 8 382 cnv 15 152 238 empty empty empty 20 12 0 14 #ff9300 #404040
 0;
 #X obj 531 301 cnv 15 180 64 empty empty empty 20 12 0 14 #ff9300 #404040
 0;
@@ -25,54 +25,54 @@
 #X floatatom 230 79 5 400 460 0 Diapasón: r_diapason s_diapason,
 f 5;
 #X obj 29 134 vradio 15 0 0 9 s_temp-sel r_temp-sel Temperamento: 0
--20 0 10 #fcfcfc #000000 #000000 8;
+-20 0 10 #fcfcfc #000000 #000000 5;
 #X text 49 163 Aaron 1/4 comma;
 #X text 49 208 Kirnberger III;
 #X text 49 178 Salinas 1/3 comma;
 #X text 49 223 Wercmeister III;
 #X text 49 238 Vallotti;
 #X obj 323 59 tgl 15 1 s_principale16 r_principale16 principale_16'
-0 -10 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 323 99 tgl 15 1 s_corno r_corno corno_inglese 0 -10 0 10 #fcfcfc
+0 -10 0 10 #fcfcfc #000000 #000000 1 1;
+#X obj 320 180 tgl 15 1 s_corno r_corno corno_inglese 0 -10 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X obj 323 139 tgl 15 1 s_fagotto16 r_fagotto16 fagotto_16' 0 -10 0
+#X obj 320 100 tgl 15 1 s_fagotto16 r_fagotto16 fagotto_16' 0 -10 0
 10 #fcfcfc #000000 #000000 0 1;
-#X obj 323 179 tgl 15 1 s_principale8 r_principale8 principale_8' 0
+#X obj 430 60 tgl 15 1 s_principale8 r_principale8 principale_8' 0
 -10 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 323 219 tgl 15 1 s_ottava4 r_ottava4 ottava_4' 0 -10 0 10 #fcfcfc
+#X obj 320 260 tgl 15 1 s_ottava4 r_ottava4 ottava_4' 0 -10 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X obj 323 259 tgl 15 1 s_tromba8 r_tromba8 tromba_8' 0 -10 0 10 #fcfcfc
+#X obj 430 140 tgl 15 1 s_tromba8 r_tromba8 tromba_8' 0 -10 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X obj 323 299 tgl 15 1 s_violabassi4 r_violabassi4 viola_bassi_4'
+#X obj 320 300 tgl 15 1 s_violabassi4 r_violabassi4 viola_bassi_4'
 0 -10 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 443 59 tgl 15 1 s_flauto4 r_flauto4 flauto_4' 0 -10 0 10 #fcfcfc
+#X obj 320 220 tgl 15 1 s_flauto4 r_flauto4 flauto_4' 0 -10 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X obj 443 99 tgl 15 1 s_ottavino r_ottavino ottavino 0 -10 0 10 #fcfcfc
+#X obj 430 100 tgl 15 1 s_ottavino r_ottavino ottavino 0 -10 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X obj 443 139 tgl 15 1 s_duodecima r_duodecima duodecima 0 -10 0 10
+#X obj 430 260 tgl 15 1 s_duodecima r_duodecima duodecima 0 -10 0 10
 #fcfcfc #000000 #000000 0 1;
-#X obj 443 179 tgl 15 1 s_cornetto r_cornetto cornetto 0 -10 0 10 #fcfcfc
+#X obj 430 180 tgl 15 1 s_cornetto r_cornetto cornetto 0 -10 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X obj 443 219 tgl 15 1 s_voce r_voce voce 0 -10 0 10 #fcfcfc #000000
+#X obj 430 220 tgl 15 1 s_voce r_voce voce 0 -10 0 10 #fcfcfc #000000
 #000000 0 1;
-#X obj 443 259 tgl 15 1 s_tromboni r_tromboni tromboni 0 -10 0 10 #fcfcfc
+#X obj 320 140 tgl 15 1 s_tromboni r_tromboni tromboni 0 -10 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X obj 10 384 cnv 15 148 204 empty empty Ganancia 10 12 0 18 #ffd479
+#X obj 10 384 cnv 15 148 234 empty empty Ganancia 10 12 0 18 #ffd479
 #ff9300 0;
 #X obj 60 445 vsl 40 128 0 127 0 0 s_vol_usu r_vol Volumen 0 -9 0 10
 #fcfcfc #000000 #000000 12700 1;
-#X obj 169 384 cnv 15 540 204 empty empty Consola 20 12 0 18 #ffd479
+#X obj 169 384 cnv 15 540 234 empty empty Consola 20 12 0 18 #ffd479
 #ff9300 0;
 #X obj 189 447 vsl 20 126 -40 60 0 0 s1_user r1 16' 0 -9 0 10 #fcfcfc
-#000000 #000000 0 1;
+#000000 #000000 6250 1;
 #X obj 249 447 vsl 20 126 -40 60 0 0 s2_user r2 16'\ 1/3 0 -9 0 10
-#fcfcfc #000000 #000000 0 1;
+#fcfcfc #000000 #000000 5000 1;
 #X obj 309 447 vsl 20 126 -40 60 0 0 s3_user r3 8' 0 -9 0 10 #fcfcfc
-#000000 #000000 12500 1;
+#000000 #000000 3750 1;
 #X obj 369 447 vsl 20 126 -40 60 0 0 s4_user r4 4' 0 -9 0 10 #fcfcfc
-#000000 #000000 0 1;
+#000000 #000000 1250 1;
 #X obj 429 447 vsl 20 126 -40 60 0 0 s5_user r5 2'\ 2/3 0 -9 0 10 #fcfcfc
-#000000 #000000 0 1;
+#000000 #000000 98 1;
 #X obj 489 447 vsl 20 126 -40 60 0 0 s6_user r6 2' 0 -9 0 10 #fcfcfc
 #000000 #000000 0 1;
 #X obj 549 447 vsl 20 126 -40 60 0 0 s7_user r7 1'\ 3/5 0 -9 0 10 #fcfcfc
@@ -85,18 +85,18 @@ f 5;
 #ff9300 0;
 #X obj 554 339 hsl 128 15 0 127 0 0 s_lfo_user r_lfo empty -2 -8 0
 10 #fcfcfc #000000 #000000 0 1;
-#X obj 533 74 cnv 15 176 216 empty empty Reverb 20 12 0 18 #ffd479
+#X obj 533 74 cnv 15 176 216 empty empty Reverberancia 20 12 0 18 #ffd479
 #ff9300 0;
-#X obj 553 124 hsl 128 15 0 127 0 0 s_room_user r_room Tamaño\ eñ\ habitación
+#X obj 553 140 hsl 128 15 0 127 0 0 s_room_user r_room Tamaño\ eñ\ habitación
 -2 -8 0 10 #fcfcfc #000000 #000000 9000 1;
-#X obj 553 164 hsl 128 15 0 127 0 0 s_damping_user r_damping damping
+#X obj 553 180 hsl 128 15 0 127 0 0 s_damping_user r_damping damping
 -2 -8 0 10 #fcfcfc #000000 #000000 2000 1;
-#X obj 553 204 hsl 128 15 0 127 0 0 s_wet_user r_wet Húmedo -2 -8
+#X obj 553 220 hsl 128 15 0 127 0 0 s_wet_user r_wet Húmedo -2 -8
 0 10 #fcfcfc #000000 #000000 9000 1;
-#X obj 553 244 hsl 128 15 0 127 0 0 s_dry_user r_dry Seco -2 -8 0 10
+#X obj 553 260 hsl 128 15 0 127 0 0 s_dry_user r_dry Seco -2 -8 0 10
 #fcfcfc #000000 #000000 11000 1;
-#X obj 653 84 tgl 15 0 s_reverb_on r_reverb_on off 17 7 0 10 #fcfcfc
-#000000 #000000 1 1;
+#X obj 671 105 tgl 15 0 s_reverb_on r_reverb_on apagada -45 6 0 10
+#fcfcfc #000000 #000000 0 1;
 #X obj 222 61 hradio 15 0 0 3 s_diapasel r_diapasel \ |415|432|440|:
 -87 7 0 10 #fcfcfc #ff9300 #000000 2;
 #X obj 665 400 bng 25 250 50 0 s_panic r_panic botón\ pánico -75
@@ -106,7 +106,6 @@ f 5;
 #X text 49 132 Afinación justa;
 #X text 49 148 Afinación pitagórica;
 #X text 49 193 Temperamento igual;
-#X text 49 254 Escala espectral;
 #X text 26 334 Do;
 #X text 38 303 Do#;
 #X text 57 334 Re;
@@ -119,3 +118,13 @@ f 5;
 #X text 176 334 La;
 #X text 192 303 Sib;
 #X text 210 334 Si;
+#X floatatom 240 590 5 0 0 0 - s2_user -, f 5;
+#X floatatom 300 590 5 0 0 0 - s3_user -, f 5;
+#X floatatom 360 590 5 0 0 0 - s4_user -, f 5;
+#X floatatom 420 590 5 0 0 0 - s5_user -, f 5;
+#X floatatom 480 590 5 0 0 0 - s6_user -, f 5;
+#X floatatom 540 590 5 0 0 0 - s7_user -, f 5;
+#X floatatom 600 590 5 0 0 0 - s8_user -, f 5;
+#X floatatom 660 590 5 0 0 0 - s9_user -, f 5;
+#X floatatom 180 590 5 0 0 0 - s1_user -, f 5;
+#X text 49 254 Escala espectral;

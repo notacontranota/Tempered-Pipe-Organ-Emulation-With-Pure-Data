@@ -1,4 +1,4 @@
-#N canvas 619 869 1301 789 10;
+#N canvas 619 263 1301 789 10;
 #X obj -1040 118 tgl 15 1 s_principale16 r_principale16 principale_16'
 0 -10 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj -945 118 tgl 15 1 s_corno r_corno corno_inglese 0 -10 0 10 #fcfcfc
@@ -8,7 +8,7 @@
 #X obj -770 118 tgl 15 1 s_principale8 r_principale8 principale_8'
 0 -10 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj -667 118 tgl 15 1 s_ottava4 r_ottava4 ottava_4' 0 -10 0 10 #fcfcfc
-#000000 #000000 1 1;
+#000000 #000000 0 1;
 #X obj -571 118 tgl 15 1 s_tromba8 r_tromba8 tromba_8' 0 -10 0 10 #fcfcfc
 #000000 #000000 0 1;
 #X obj -471 118 tgl 15 1 s_violabassi4 r_violabassi4 viola_bassi_4'
@@ -22,7 +22,7 @@
 #X obj -64 118 tgl 15 1 s_cornetto r_cornetto cornetto 0 -10 0 10 #fcfcfc
 #000000 #000000 0 1;
 #X obj 25 118 tgl 15 1 s_voce r_voce voce 0 -10 0 10 #fcfcfc #000000
-#000000 1 1;
+#000000 0 1;
 #X obj 113 118 tgl 15 1 s_tromboni r_tromboni tromboni 0 -10 0 10 #fcfcfc
 #000000 #000000 0 1;
 #X floatatom -638 574 5 0 0 0 - - -, f 5;
@@ -48,11 +48,11 @@
 #X obj -591 232 outlet;
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
-#X msg -886 131 -40 0 30 0 -40 -40 -40 -40 -40;
 #X obj -905 33 r s_fagotto16;
+#X msg -886 131 -100 0 30 0 -100 -100 -100 -100 -100;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
-#X connect 1 1 13 0;
+#X connect 1 1 14 0;
 #X connect 2 0 3 0;
 #X connect 2 1 4 0;
 #X connect 2 2 5 0;
@@ -63,8 +63,8 @@
 #X connect 2 7 10 0;
 #X connect 2 8 11 0;
 #X connect 12 0 2 0;
-#X connect 13 0 2 0;
-#X connect 14 0 0 0;
+#X connect 13 0 0 0;
+#X connect 14 0 2 0;
 #X restore -812 173 pd fagotto16;
 #N canvas 497 433 450 300 flauto4 0;
 #X floatatom -905 66 5 0 0 0 - - -, f 5;
@@ -81,7 +81,7 @@
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
 #X obj -905 33 r s_flauto4;
-#X msg -886 131 -40 -40 -40 40 -40 -10 -40 -10 0;
+#X msg -886 131 -100 -100 -100 40 -100 -10 -100 -10 0;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
 #X connect 1 1 14 0;
@@ -123,7 +123,7 @@
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
 #X obj -905 33 r s_corno;
-#X msg -886 131 -20 10 -10 0 0 -20 -30 -40 -40;
+#X msg -886 131 -20 10 -10 0 0 -20 -30 -100 -100;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
 #X connect 1 1 14 0;
@@ -154,11 +154,11 @@
 #X obj -591 232 outlet;
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
-#X msg -886 131 -40 -40 10 30 10 0 -20 -30 -40;
 #X obj -905 33 r s_principale8;
+#X msg -886 131 -100 -100 10 30 10 0 -20 -30 -100;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
-#X connect 1 1 13 0;
+#X connect 1 1 14 0;
 #X connect 2 0 3 0;
 #X connect 2 1 4 0;
 #X connect 2 2 5 0;
@@ -169,10 +169,10 @@
 #X connect 2 7 10 0;
 #X connect 2 8 11 0;
 #X connect 12 0 2 0;
-#X connect 13 0 2 0;
-#X connect 14 0 0 0;
+#X connect 13 0 0 0;
+#X connect 14 0 2 0;
 #X restore -719 173 pd principale8;
-#N canvas 1126 956 450 325 principale16 0;
+#N canvas 546 487 450 325 principale16 0;
 #X floatatom -905 75 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
@@ -186,14 +186,14 @@
 #X obj -591 232 outlet;
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
-#X msg -886 131 10 0 -10 -30 -40 -40 -40 -40 -40;
 #X obj -905 10 r s_principale16;
 #X obj -890 33 r bg;
 #X obj -890 53 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
+#X msg -886 131 10 0 -10 -30 -100 -100 -100 -100 -100;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
-#X connect 1 1 13 0;
+#X connect 1 1 16 0;
 #X connect 2 0 3 0;
 #X connect 2 1 4 0;
 #X connect 2 2 5 0;
@@ -204,10 +204,10 @@
 #X connect 2 7 10 0;
 #X connect 2 8 11 0;
 #X connect 12 0 2 0;
-#X connect 13 0 2 0;
-#X connect 14 0 0 0;
-#X connect 15 0 16 0;
-#X connect 16 0 0 0;
+#X connect 13 0 0 0;
+#X connect 14 0 15 0;
+#X connect 15 0 0 0;
+#X connect 16 0 2 0;
 #X restore -996 173 pd principale16;
 #N canvas 497 451 450 300 ottava4 0;
 #X floatatom -905 66 5 0 0 0 - - -, f 5;
@@ -224,7 +224,7 @@
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
 #X obj -905 33 r s_ottava4;
-#X msg -886 131 -40 -40 -40 20 -20 20 -30 -20 -30;
+#X msg -886 131 -100 -100 -100 20 -20 20 -30 -20 -30;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
 #X connect 1 1 14 0;
@@ -256,7 +256,7 @@
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
 #X obj -905 33 r s_tromba8;
-#X msg -886 131 -40 -40 20 30 40 20 10 -10 -40;
+#X msg -886 131 -100 -100 20 30 40 20 10 -10 -100;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
 #X connect 1 1 14 0;
@@ -288,7 +288,7 @@
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
 #X obj -905 33 r s_violabassi4;
-#X msg -886 131 -40 -40 -40 -10 0 0 -20 -10 -20;
+#X msg -886 131 -100 -100 -100 -10 0 0 -20 -10 -20;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
 #X connect 1 1 14 0;
@@ -320,7 +320,7 @@
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
 #X obj -905 33 r s_ottavino;
-#X msg -886 131 -40 -40 -40 -40 -40 20 -30 -10 -20;
+#X msg -886 131 -100 -100 -100 -100 -100 20 -30 -10 -20;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
 #X connect 1 1 14 0;
@@ -352,7 +352,7 @@
 #X obj -537 242 outlet;
 #X msg -895 166 -100 -100 -100 -100 -100 -100 -100 -100 -100;
 #X obj -895 43 r s_duodecima;
-#X msg -876 141 -40 -40 -40 -40 20 -40 -40 -20 -40;
+#X msg -876 141 -100 -100 -100 -100 20 -100 -100 -20 -100;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
 #X connect 1 1 14 0;
@@ -384,7 +384,7 @@
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
 #X obj -905 33 r s_cornetto;
-#X msg -886 131 -40 -40 40 20 20 -40 0 -40 -40;
+#X msg -886 131 -100 -100 40 20 20 -100 0 -100 -100;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
 #X connect 1 1 14 0;
@@ -415,11 +415,11 @@
 #X obj -591 232 outlet;
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
-#X msg -886 131 -40 -40 -20 -10 -20 -20 -30 -30 -40;
 #X obj -905 33 r s_voce;
+#X msg -886 131 -100 -100 -20 -10 -20 -20 -30 -30 -100;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
-#X connect 1 1 13 0;
+#X connect 1 1 14 0;
 #X connect 2 0 3 0;
 #X connect 2 1 4 0;
 #X connect 2 2 5 0;
@@ -430,8 +430,8 @@
 #X connect 2 7 10 0;
 #X connect 2 8 11 0;
 #X connect 12 0 2 0;
-#X connect 13 0 2 0;
-#X connect 14 0 0 0;
+#X connect 13 0 0 0;
+#X connect 14 0 2 0;
 #X restore -39 173 pd voce;
 #N canvas 525 489 450 300 tromboni 0;
 #X floatatom -905 66 5 0 0 0 - - -, f 5;
@@ -448,7 +448,7 @@
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
 #X obj -905 33 r s_tromboni;
-#X msg -886 131 -40 -40 20 30 40 20 10 -10 -40;
+#X msg -886 131 -100 -100 20 30 40 20 10 -10 -100;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
 #X connect 1 1 14 0;

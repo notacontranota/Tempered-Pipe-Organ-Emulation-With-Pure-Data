@@ -12,7 +12,7 @@
 #X obj 290 730 temperaments;
 #X obj 160 660 loadbang;
 #X obj 101 101 cnv 15 174 48 empty empty Órgano\ Temperado 19 7 0
-14 #ffd479 #ff9300 0;
+14 #90714c #000000 0;
 #X text 146 133 & Pablo Herrera;
 #X text 210 24 Authors: Nicola Simoni (nicola.simoni.89@gmail.com)
 ;

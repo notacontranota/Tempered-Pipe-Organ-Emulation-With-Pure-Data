@@ -1,20 +1,20 @@
-#N canvas 23 79 556 973 10;
+#N canvas 23 79 472 361 10;
 #X obj 30 140 notein 1;
-#X obj 31 480 reverb;
+#X obj 30 260 reverb;
 #X obj 30 20 pddp/dsp;
-#X obj 31 410 tremolo;
-#X obj 290 700 presets;
-#X obj 290 670 registri;
-#X obj 30 844 dac~;
-#X obj 31 652 out;
+#X obj 30 230 tremolo;
+#X obj 100 200 presets;
+#X obj 100 170 registri;
+#X obj 30 320 dac~;
+#X obj 30 290 out;
 #X obj 30 200 consolle;
 #X obj 30 170 tuner;
-#X obj 290 730 temperaments;
-#X obj 160 660 loadbang;
-#X obj 101 101 cnv 15 174 48 empty empty Órgano\ Temperado 19 7 0
-14 #90714c #000000 0;
+#X obj 100 230 temperaments;
+#X obj 210 170 loadbang;
+#X obj 101 101 cnv 15 174 48 empty empty Órgano\ Tubular 32 7 0 14
+#90714c #000000 0;
 #X text 146 133 & Pablo Herrera;
-#X text 210 24 Authors: Nicola Simoni (nicola.simoni.89@gmail.com)
+#X text 110 34 Authors: Nicola Simoni (nicola.simoni.89@gmail.com)
 ;
 #N canvas 628 1228 150 165 diapasel 0;
 #X obj 20 10 r s_diapasel;
@@ -30,8 +30,8 @@
 #X connect 2 0 5 0;
 #X connect 3 0 5 0;
 #X connect 4 0 5 0;
-#X restore 290 760 pd diapasel;
-#X obj 160 700 del 10;
+#X restore 100 260 pd diapasel;
+#X obj 210 190 del 10;
 #N canvas 626 1175 450 451 shortcuts 0;
 #X obj 20 -20 keyname;
 #X symbolatom 20 10 10 0 0 0 - - -, f 10;
@@ -115,7 +115,7 @@
 #X connect 28 12 29 0;
 #X connect 29 0 30 0;
 #X connect 30 0 31 0;
-#X restore 289 790 pd shortcuts;
+#X restore 99 290 pd shortcuts;
 #N canvas 530 1274 550 439 MIDI 0;
 #X floatatom 20 53 5 0 0 0 - - -, f 5;
 #N canvas 735 1176 100 159 mtor 0;
@@ -367,14 +367,12 @@
 #X connect 72 0 73 0;
 #X connect 73 0 71 0;
 #X connect 77 0 69 0;
-#X restore 288 822 pd MIDI shortcuts;
+#X restore 98 322 pd MIDI shortcuts;
 #X text 152 121 Nicola Simoni;
-#X text 210 10 Project: Tempered Pipe Organ Emulation with Pure Data
+#X text 110 20 Project: Tempered Pipe Organ Emulation with Pure Data
 ;
-#X text 262 40 & Pablo Herrera (notacontranota@gmail.com);
-#X msg 160 740 \; pd dsp 1 \; r_diapasel 0 \; r_temp-sel 2 \; r_root
-0 \; r_reverb_on 0 \; r_vol 127 \; r_room 90 \; r_damping 20 \; r_wet
-90 \; r_dry 110;
+#X text 162 50 & Pablo Herrera (notacontranota@gmail.com);
+#X msg 210 220 \; pd dsp 1;
 #X connect 0 0 9 0;
 #X connect 0 1 8 1;
 #X connect 1 0 7 0;

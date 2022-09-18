@@ -30,4 +30,4 @@ proper waveform.;
 #X connect 9 0 10 0;
 #X connect 10 0 2 0;
 #X connect 13 0 9 0;
-#X coords 0 -1 1 1 150 60 1 100 100;
+#X coords 0 0 1 1 150 60 0;

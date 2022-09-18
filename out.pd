@@ -3,7 +3,7 @@
 0 10 #fcfcfc #000000 #000000 12700 1;
 #X obj 334 241 *~;
 #X obj 390 240 *~;
-#X floatatom 468 182 5 0 0 0 - - - 0;
+#X floatatom 468 182 5 0 0 0 - - -, f 5;
 #X obj 468 145 / 127;
 #X obj 468 108 r s_vol;
 #X obj 703 154 ctlin 7 1;
@@ -27,4 +27,4 @@ the volume fader.;
 #X connect 5 0 4 0;
 #X connect 10 0 1 0;
 #X connect 11 0 2 0;
-#X coords 0 -1 1 1 85 180 1 100 100;
+#X coords 0 0 1 1 85 180 0;

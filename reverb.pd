@@ -7,17 +7,17 @@
 #X obj 461 451 inlet~;
 #X obj 459 592 outlet~;
 #X obj 512 591 outlet~;
-#X obj 134 142 vsl 30 100 0 127 0 1 s_room s_room_user roomsize 0 -9
-0 10 #fcfcfc #000000 #000000 5223 1;
+#X obj 140 140 vsl 30 100 0 127 0 1 s_room s_room_user roomsize 0 -9
+0 10 #fcfcfc #000000 #000000 7016 1;
 #X floatatom 576 416 5 0 0 0 - - -, f 5;
 #X obj 199 142 vsl 30 100 0 128 0 1 s_damping s_damping_user damping
-0 -9 0 10 #fcfcfc #000000 #000000 1470 1;
+0 -9 0 10 #fcfcfc #000000 #000000 1547 1;
 #X floatatom 662 414 5 0 0 0 - - -, f 5;
-#X obj 265 143 vsl 30 100 0 128 0 1 s_wet s_wet_user wet 0 -9 0 10
-#fcfcfc #000000 #000000 1547 1;
+#X obj 260 140 vsl 30 100 0 128 0 1 s_wet s_wet_user wet 0 -9 0 10
+#fcfcfc #000000 #000000 6961 1;
 #X floatatom 747 414 5 0 0 0 - - -, f 5;
-#X obj 330 144 vsl 30 100 0 128 0 1 s_dry s_dry_user dry 0 -9 0 10
-#fcfcfc #000000 #000000 3480 1;
+#X obj 320 140 vsl 30 100 0 128 0 1 s_dry s_dry_user dry 0 -9 0 10
+#fcfcfc #000000 #000000 8508 1;
 #X floatatom 810 413 5 0 0 0 - - -, f 5;
 #X msg 337 449 bypass \$1;
 #X obj 661 157 ctlin 91 1;
@@ -53,6 +53,10 @@ factor \, the wet and the dry amounts.;
 #X text 966 675 Author: Nicola Simoni (nicola.simoni.89@gmail.com)
 ;
 #X obj 230 390 r s_reverb_on;
+#X floatatom 138 259 5 0 127 0 - s_room -, f 5;
+#X floatatom 200 260 5 0 127 0 - s_damping -, f 5;
+#X floatatom 260 260 5 0 127 0 - s_wet -, f 5;
+#X floatatom 318 259 5 0 127 0 - s_dry -, f 5;
 #X connect 0 0 40 0;
 #X connect 0 1 41 0;
 #X connect 1 0 0 0;
@@ -83,4 +87,4 @@ factor \, the wet and the dry amounts.;
 #X connect 40 0 6 0;
 #X connect 41 0 7 0;
 #X connect 44 0 25 0;
-#X coords 0 -1 1 1 300 160 1 100 100;
+#X coords 0 0 1 1 300 200 0;

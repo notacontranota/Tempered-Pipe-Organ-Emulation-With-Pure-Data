@@ -1,14 +1,14 @@
-#N canvas 471 42 725 637 12;
+#N canvas 471 42 725 625 12;
 #X obj 531 11 cnv 15 180 54 empty empty empty 20 12 0 14 #000000 #404040
 0;
 #X obj 533 13 pipe_organ-main;
-#X obj 167 382 cnv 15 544 238 empty empty empty 20 12 0 14 #000000
+#X obj 167 375 cnv 15 544 238 empty empty empty 20 12 0 14 #000000
 #404040 0;
-#X obj 8 382 cnv 15 152 238 empty empty empty 20 12 0 14 #000000 #404040
+#X obj 8 375 cnv 15 148 238 empty empty empty 20 12 0 14 #000000 #404040
 0;
 #X obj 531 301 cnv 15 180 64 empty empty empty 20 12 0 14 #000000 #404040
 0;
-#X obj 531 72 cnv 15 180 220 empty empty empty 20 12 0 14 #000000 #404040
+#X obj 531 73 cnv 15 180 220 empty empty empty 20 12 0 14 #000000 #404040
 0;
 #X obj 301 12 cnv 15 218 354 empty empty empty 20 12 0 14 #000000 #404040
 0;
@@ -57,49 +57,49 @@ f 5;
 #000000 0 1;
 #X obj 320 140 tgl 15 1 s_tromboni r_tromboni tromboni 0 -10 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X obj 10 384 cnv 15 148 234 empty empty Volumen 20 12 0 18 #90714c
+#X obj 10 377 cnv 15 144 234 empty empty Volumen 20 12 0 18 #90714c
 #000000 0;
-#X obj 60 445 vsl 40 128 0 127 0 1 s_vol_usu r_vol empty 0 -9 0 10
+#X obj 60 438 vsl 40 128 0 127 0 1 s_vol_usu r_vol empty 0 -9 0 10
 #fcfcfc #000000 #000000 12700 1;
-#X obj 169 384 cnv 15 540 234 empty empty Consola 20 12 0 18 #90714c
+#X obj 169 377 cnv 15 540 234 empty empty Consola 20 12 0 18 #90714c
 #000000 0;
-#X obj 189 447 vsl 20 126 -40 60 0 1 s1_user r1 16' 0 -9 0 10 #fcfcfc
+#X obj 189 440 vsl 20 126 -40 60 0 1 s1_user r1 16' 0 -9 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X obj 249 447 vsl 20 126 -40 60 0 1 s2_user r2 16'\ 1/3 0 -9 0 10
+#X obj 249 440 vsl 20 126 -40 60 0 1 s2_user r2 16'\ 1/3 0 -9 0 10
 #fcfcfc #000000 #000000 0 1;
-#X obj 309 447 vsl 20 126 -40 60 0 1 s3_user r3 8' 0 -9 0 10 #fcfcfc
+#X obj 309 440 vsl 20 126 -40 60 0 1 s3_user r3 8' 0 -9 0 10 #fcfcfc
 #000000 #000000 10000 1;
-#X obj 369 447 vsl 20 126 -40 60 0 1 s4_user r4 4' 0 -9 0 10 #fcfcfc
+#X obj 369 440 vsl 20 126 -40 60 0 1 s4_user r4 4' 0 -9 0 10 #fcfcfc
 #000000 #000000 7501 1;
-#X obj 429 447 vsl 20 126 -40 60 0 1 s5_user r5 2'\ 2/3 0 -9 0 10 #fcfcfc
+#X obj 429 440 vsl 20 126 -40 60 0 1 s5_user r5 2'\ 2/3 0 -9 0 10 #fcfcfc
 #000000 #000000 7505 1;
-#X obj 489 447 vsl 20 126 -40 60 0 1 s6_user r6 2' 0 -9 0 10 #fcfcfc
+#X obj 489 440 vsl 20 126 -40 60 0 1 s6_user r6 2' 0 -9 0 10 #fcfcfc
 #000000 #000000 5000 1;
-#X obj 549 447 vsl 20 126 -40 60 0 1 s7_user r7 1'\ 3/5 0 -9 0 10 #fcfcfc
+#X obj 549 440 vsl 20 126 -40 60 0 1 s7_user r7 1'\ 3/5 0 -9 0 10 #fcfcfc
 #000000 #000000 5005 1;
-#X obj 609 447 vsl 20 126 -40 60 0 1 s8_user r8 1'\ 1/3 0 -9 0 10 #fcfcfc
+#X obj 609 440 vsl 20 126 -40 60 0 1 s8_user r8 1'\ 1/3 0 -9 0 10 #fcfcfc
 #000000 #000000 3750 1;
-#X obj 669 447 vsl 20 126 -40 60 0 1 s9_user r9 1' 0 -9 0 10 #fcfcfc
+#X obj 669 440 vsl 20 126 -40 60 0 1 s9_user r9 1' 0 -9 0 10 #fcfcfc
 #000000 #000000 2500 1;
 #X obj 533 303 cnv 15 176 60 empty empty Trémolo 20 12 0 18 #90714c
 #000000 0;
 #X obj 554 339 hsl 128 15 0 127 0 1 s_lfo_user r_lfo empty -2 -8 0
 10 #fcfcfc #000000 #000000 0 1;
-#X obj 533 74 cnv 15 176 216 empty empty Reverberancia 20 12 0 18 #90714c
+#X obj 533 75 cnv 15 176 216 empty empty Reverberancia 20 12 0 18 #90714c
 #000000 0;
-#X obj 553 140 hsl 128 15 0 127 0 1 s_room_user r_room Tamaño\ de\ sala
+#X obj 553 141 hsl 128 15 0 127 0 1 s_room_user r_room Tamaño\ de\ sala
 -2 -8 0 10 #fcfcfc #000000 #000000 8000 1;
-#X obj 553 180 hsl 128 15 0 127 0 1 s_damping_user r_damping Atenuación
+#X obj 553 181 hsl 128 15 0 127 0 1 s_damping_user r_damping Atenuación
 -2 -8 0 10 #fcfcfc #000000 #000000 2000 1;
-#X obj 553 220 hsl 128 15 0 127 0 1 s_wet_user r_wet Húmedo -2 -8
+#X obj 553 221 hsl 128 15 0 127 0 1 s_wet_user r_wet Húmedo -2 -8
 0 10 #fcfcfc #000000 #000000 8000 1;
-#X obj 553 260 hsl 128 15 0 127 0 1 s_dry_user r_dry Seco -2 -8 0 10
+#X obj 553 261 hsl 128 15 0 127 0 1 s_dry_user r_dry Seco -2 -8 0 10
 #fcfcfc #000000 #000000 11000 1;
-#X obj 671 105 tgl 15 1 s_reverb_on r_reverb_on apagada -45 6 0 10
+#X obj 671 106 tgl 15 1 s_reverb_on r_reverb_on apagada -45 6 0 10
 #fcfcfc #000000 #000000 0 1;
 #X obj 222 61 hradio 15 0 1 3 s_diapasel r_diapasel \ |415|432|440|:
 -87 7 0 10 #fcfcfc #90714c #000000 2;
-#X obj 665 400 bng 25 250 50 0 s_panic r_panic botón\ pánico -75
+#X obj 665 393 bng 25 250 50 0 s_panic r_panic botón\ pánico -75
 9 0 10 #ffffff #ff9300 #000000;
 #X obj 24 320 hradio 17 0 1 12 s_root r_root Fundamental: 0 -27 0 10
 #fcfcfc #90714c #000000 0;
@@ -118,13 +118,13 @@ f 5;
 #X text 176 334 La;
 #X text 192 303 Sib;
 #X text 210 334 Si;
-#X floatatom 240 590 5 -40 60 0 - s2_user -, f 5;
-#X floatatom 300 590 5 0 0 0 - s3_user -, f 5;
-#X floatatom 360 590 5 -40 60 0 - s4_user -, f 5;
-#X floatatom 420 590 5 -40 60 0 - s5_user -, f 5;
-#X floatatom 480 590 5 -40 60 0 - s6_user -, f 5;
-#X floatatom 540 590 5 -40 60 0 - s7_user -, f 5;
-#X floatatom 600 590 5 -40 60 0 - s8_user -, f 5;
-#X floatatom 660 590 5 -40 60 0 - s9_user -, f 5;
-#X floatatom 180 590 5 -40 60 0 - s1_user -, f 5;
+#X floatatom 240 583 5 -40 60 0 - s2_user -, f 5;
+#X floatatom 300 583 5 0 0 0 - s3_user -, f 5;
+#X floatatom 360 583 5 -40 60 0 - s4_user -, f 5;
+#X floatatom 420 583 5 -40 60 0 - s5_user -, f 5;
+#X floatatom 480 583 5 -40 60 0 - s6_user -, f 5;
+#X floatatom 540 583 5 -40 60 0 - s7_user -, f 5;
+#X floatatom 600 583 5 -40 60 0 - s8_user -, f 5;
+#X floatatom 660 583 5 -40 60 0 - s9_user -, f 5;
+#X floatatom 180 583 5 -40 60 0 - s1_user -, f 5;
 #X text 49 254 Escala espectral;

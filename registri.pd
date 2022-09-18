@@ -1,4 +1,4 @@
-#N canvas 619 263 1301 789 10;
+#N canvas 301 90 1301 789 10;
 #X obj -1040 118 tgl 15 1 s_principale16 r_principale16 principale_16'
 0 -10 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj -945 118 tgl 15 1 s_corno r_corno corno_inglese 0 -10 0 10 #fcfcfc
@@ -187,13 +187,10 @@
 #X obj -547 232 outlet;
 #X msg -905 156 -100 -100 -100 -100 -100 -100 -100 -100 -100;
 #X obj -905 10 r s_principale16;
-#X obj -890 33 r bg;
-#X obj -890 53 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
-#000000 #000000;
 #X msg -886 131 10 0 -10 -30 -100 -100 -100 -100 -100;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
-#X connect 1 1 16 0;
+#X connect 1 1 14 0;
 #X connect 2 0 3 0;
 #X connect 2 1 4 0;
 #X connect 2 2 5 0;
@@ -205,9 +202,7 @@
 #X connect 2 8 11 0;
 #X connect 12 0 2 0;
 #X connect 13 0 0 0;
-#X connect 14 0 15 0;
-#X connect 15 0 0 0;
-#X connect 16 0 2 0;
+#X connect 14 0 2 0;
 #X restore -996 173 pd principale16;
 #N canvas 497 451 450 300 ottava4 0;
 #X floatatom -905 66 5 0 0 0 - - -, f 5;

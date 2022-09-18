@@ -31,7 +31,6 @@
 #X connect 3 0 5 0;
 #X connect 4 0 5 0;
 #X restore 100 260 pd diapasel;
-#X obj 210 190 del 10;
 #N canvas 626 1175 450 451 shortcuts 0;
 #X obj 20 -20 keyname;
 #X symbolatom 20 10 10 0 0 0 - - -, f 10;
@@ -372,7 +371,7 @@
 #X text 110 20 Project: Tempered Pipe Organ Emulation with Pure Data
 ;
 #X text 162 50 & Pablo Herrera (notacontranota@gmail.com);
-#X msg 210 220 \; pd dsp 1;
+#X msg 210 200 \; pd dsp 1;
 #X connect 0 0 9 0;
 #X connect 0 1 8 1;
 #X connect 1 0 7 0;
@@ -382,6 +381,5 @@
 #X connect 7 1 6 1;
 #X connect 8 0 3 0;
 #X connect 9 0 8 0;
-#X connect 11 0 16 0;
-#X connect 16 0 22 0;
+#X connect 11 0 21 0;
 #X coords 0 -1 1 1 176 50 2 100 100;

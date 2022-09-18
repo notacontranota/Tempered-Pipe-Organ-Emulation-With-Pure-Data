@@ -34,7 +34,7 @@ f 5;
 #X obj 320 60 tgl 15 1 s_principale16 r_principale16 principale_16'
 0 -10 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 430 100 tgl 15 1 s_corno r_corno corno_inglese 0 -10 0 10 #fcfcfc
-#000000 #000000 1 1;
+#000000 #000000 0 1;
 #X obj 320 100 tgl 15 1 s_fagotto16 r_fagotto16 fagotto_16' 0 -10 0
 10 #fcfcfc #000000 #000000 0 1;
 #X obj 430 60 tgl 15 1 s_principale8 r_principale8 principale_8' 0
@@ -43,8 +43,8 @@ f 5;
 #000000 #000000 0 1;
 #X obj 430 140 tgl 15 1 s_tromba8 r_tromba8 tromba_8' 0 -10 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X obj 320 260 tgl 15 1 s_violabassi4 r_violabassi4 viola_bassi_4'
-0 -10 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 320 260 tgl 15 1 s_violabassi4 r_violabassi4 viola_bassa_4'
+0 -10 0 10 #fcfcfc #000000 #000000 1 1;
 #X obj 430 180 tgl 15 1 s_flauto4 r_flauto4 flauto_4' 0 -10 0 10 #fcfcfc
 #000000 #000000 0 1;
 #X obj 320 300 tgl 15 1 s_ottavino r_ottavino ottavino 0 -10 0 10 #fcfcfc
@@ -64,23 +64,23 @@ f 5;
 #X obj 169 384 cnv 15 540 234 empty empty Consola 20 12 0 18 #90714c
 #000000 0;
 #X obj 189 447 vsl 20 126 -40 60 0 1 s1_user r1 16' 0 -9 0 10 #fcfcfc
-#000000 #000000 2500 1;
+#000000 #000000 0 1;
 #X obj 249 447 vsl 20 126 -40 60 0 1 s2_user r2 16'\ 1/3 0 -9 0 10
-#fcfcfc #000000 #000000 6250 1;
+#fcfcfc #000000 #000000 0 1;
 #X obj 309 447 vsl 20 126 -40 60 0 1 s3_user r3 8' 0 -9 0 10 #fcfcfc
 #000000 #000000 10000 1;
 #X obj 369 447 vsl 20 126 -40 60 0 1 s4_user r4 4' 0 -9 0 10 #fcfcfc
-#000000 #000000 7505 1;
+#000000 #000000 7501 1;
 #X obj 429 447 vsl 20 126 -40 60 0 1 s5_user r5 2'\ 2/3 0 -9 0 10 #fcfcfc
 #000000 #000000 7505 1;
 #X obj 489 447 vsl 20 126 -40 60 0 1 s6_user r6 2' 0 -9 0 10 #fcfcfc
-#000000 #000000 2500 1;
+#000000 #000000 5000 1;
 #X obj 549 447 vsl 20 126 -40 60 0 1 s7_user r7 1'\ 3/5 0 -9 0 10 #fcfcfc
-#000000 #000000 5001 1;
+#000000 #000000 5005 1;
 #X obj 609 447 vsl 20 126 -40 60 0 1 s8_user r8 1'\ 1/3 0 -9 0 10 #fcfcfc
-#000000 #000000 0 1;
+#000000 #000000 3750 1;
 #X obj 669 447 vsl 20 126 -40 60 0 1 s9_user r9 1' 0 -9 0 10 #fcfcfc
-#000000 #000000 0 1;
+#000000 #000000 2500 1;
 #X obj 533 303 cnv 15 176 60 empty empty Trémolo 20 12 0 18 #90714c
 #000000 0;
 #X obj 554 339 hsl 128 15 0 127 0 1 s_lfo_user r_lfo empty -2 -8 0
@@ -88,11 +88,11 @@ f 5;
 #X obj 533 74 cnv 15 176 216 empty empty Reverberancia 20 12 0 18 #90714c
 #000000 0;
 #X obj 553 140 hsl 128 15 0 127 0 1 s_room_user r_room Tamaño\ de\ sala
--2 -8 0 10 #fcfcfc #000000 #000000 9000 1;
-#X obj 553 180 hsl 128 15 0 127 0 1 s_damping_user r_damping damping
+-2 -8 0 10 #fcfcfc #000000 #000000 8000 1;
+#X obj 553 180 hsl 128 15 0 127 0 1 s_damping_user r_damping Atenuación
 -2 -8 0 10 #fcfcfc #000000 #000000 2000 1;
 #X obj 553 220 hsl 128 15 0 127 0 1 s_wet_user r_wet Húmedo -2 -8
-0 10 #fcfcfc #000000 #000000 9000 1;
+0 10 #fcfcfc #000000 #000000 8000 1;
 #X obj 553 260 hsl 128 15 0 127 0 1 s_dry_user r_dry Seco -2 -8 0 10
 #fcfcfc #000000 #000000 11000 1;
 #X obj 671 105 tgl 15 1 s_reverb_on r_reverb_on apagada -45 6 0 10

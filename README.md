@@ -3,7 +3,10 @@
 
 **Afinación y temperamentos históricoa** es un texto elaborado pro los profesores Pablo Herrera y Diego Vázquez, texto éste que aborda la temática de la historia de las afinaciones en la música atravesada por los conceptos de *lo aristoxénico* y *los pitagórico* como ordenadores de las diferentes soluciones que a lo largo de los siglos se ha dado al problema de la afinación musical.
 
-**Órgano Tubular Temperado** es un *patch* para PureData que no deja de ser una extensión del texto de Herrera y Vázquez, extensión absolutamente necesaria si realmente se desea acometer el estudio de las afinaciones, porque pretender comprender esta temática exclusivamente desde lo teórico sin incorporar la experiencia auditiva es como pretender aprender a cocinar sin comer.
+**Órgano Tubular Temperado** es un *patch* para Pure Data, basado en **Pipe Organ** de *Nicola Simoni*, que no deja de ser una extensión del texto de Herrera y Vázquez, extensión absolutamente necesaria si realmente se desea acometer el estudio de las afinaciones, porque pretender comprender esta temática exclusivamente desde lo teórico sin incorporar la experiencia auditiva es como pretender aprender a cocinar sin comer.
+
+## Instalación y ejecución
+Aunque es perfectamente funcional enn Pure Data, recomendamos instalar **Purr Data** para la ejecución de **Órgano Tubular Temperado**, ya que esta variante de Pure Data responde mejor ante los controladores MIDI. Por lo demás, da igual Pure Data o Purr Data.
 
 ## Características
 * 13 registros combinables, a saber:

@@ -11,7 +11,7 @@
 #X obj 30 170 tuner;
 #X obj 100 230 temperaments;
 #X obj 210 170 loadbang;
-#X obj 101 101 cnv 15 174 48 empty empty Órgano\ Tubular 32 7 0 14
+#X obj 100 100 cnv 15 176 50 empty empty Órgano\ Tubular 32 7 0 14
 #a19383 #000000 0;
 #X text 146 133 & Pablo Herrera;
 #X text 110 34 Authors: Nicola Simoni (nicola.simoni.89@gmail.com)

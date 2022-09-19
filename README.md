@@ -34,4 +34,8 @@
 	* Afinación pitegórica
 	* Afinación justa
 * Diapasón afinable entre 400 y 460 hz., con afinación rápida en 415, 432 y 440. 
+* Efecto de *reverberación*.
+* LFO.
+* Control de volumen de salida.
+* Controles MIDI programados para la superficie KORG NanoKontrol2.
 * Botón de pánico (*panic*). El cambiar de afinación (por cualquier camino —modificando el diapasón, seleccionando un temperamento o afinando una nota en particular— mientras se está tocando una o más notas, producirá como efecto que dichas notas no se apaguen al soltar las teclas de la entrada MIDI. En esos caso, por favor, no entre en pánico y presione *panic*.

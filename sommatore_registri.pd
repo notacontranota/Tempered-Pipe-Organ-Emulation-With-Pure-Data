@@ -1,4 +1,4 @@
-#N canvas 619 338 1301 714 10;
+#N canvas 571 136 1301 730 10;
 #X floatatom 178 159 5 0 0 0 - - -, f 5;
 #X obj 178 188 / 10;
 #X floatatom 178 216 5 0 0 0 - - -, f 5;
@@ -6,9 +6,9 @@
 #X floatatom 163 280 10 0 0 0 - - -, f 10;
 #X msg 146 217 10;
 #X obj 163 321 +;
-#X obj 720 536 log;
-#X floatatom 720 607 5 0 0 0 - - -, f 5;
-#X obj 720 569 * 4.34294;
+#X obj 860 490 log;
+#X floatatom 860 530 5 0 0 0 - - -, f 5;
+#X obj 860 510 * 4.34294;
 #X obj 180 349 +;
 #X obj 195 377 +;
 #X obj 213 404 +;
@@ -17,7 +17,7 @@
 #X obj 265 487 +;
 #X obj 282 516 +;
 #X obj 178 94 inlet;
-#X obj 720 641 outlet;
+#X obj 590 700 outlet;
 #X obj 298 544 +;
 #X obj 314 573 +;
 #X obj 329 601 +;
@@ -121,15 +121,21 @@
 #X text 13 8 For each register (they are 13 in total) we sum the correspondents
 harmonics. The sum is energetic \, so we have to compute \, for each
 input intensity I \, the correspondent linear quantity 10^(I/10).;
-#X text 835 529 We sum all the linear intensities and then we compute
+#X text 860 430 We sum all the linear intensities and then we compute
 10*Log(sum). As there is no base 10 log \, we multiply the result by
 log(e) and then by 10;
-#X text 969 670 Author: Nicola Simoni (nicola.simoni.89@gmail.com)
-;
-#X text 962 654 Project: Pipe Organ Emulation with Pure Data;
 #X obj 80 230 r bg;
 #X obj 80 255 bang;
-#X obj 190 130 s bg;
+#X obj 710 520 log 10;
+#X obj 710 540 * 10;
+#X floatatom 710 560 5 0 0 0 - - -, f 5;
+#X obj 590 600 log;
+#X obj 590 625 * 10;
+#X obj 590 650 /;
+#X floatatom 590 675 5 0 0 0 - - -, f 5;
+#X msg 630 600 10;
+#X obj 630 625 log;
+#X obj 590 570 t f b;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 1;
@@ -138,7 +144,6 @@ log(e) and then by 10;
 #X connect 5 0 3 0;
 #X connect 6 0 10 0;
 #X connect 7 0 9 0;
-#X connect 8 0 18 0;
 #X connect 9 0 8 0;
 #X connect 10 0 11 0;
 #X connect 11 0 12 0;
@@ -149,11 +154,11 @@ log(e) and then by 10;
 #X connect 16 0 19 0;
 #X connect 17 0 0 0;
 #X connect 17 0 5 0;
-#X connect 17 0 125 0;
 #X connect 19 0 20 0;
 #X connect 20 0 21 0;
 #X connect 21 0 22 0;
-#X connect 22 0 7 0;
+#X connect 22 0 123 0;
+#X connect 22 0 132 0;
 #X connect 23 0 24 0;
 #X connect 24 0 25 0;
 #X connect 25 0 26 1;
@@ -262,5 +267,15 @@ log(e) and then by 10;
 #X connect 117 0 111 0;
 #X connect 117 0 116 0;
 #X connect 117 0 118 0;
+#X connect 121 0 122 0;
+#X connect 122 0 6 0;
 #X connect 123 0 124 0;
-#X connect 124 0 6 0;
+#X connect 124 0 125 0;
+#X connect 126 0 127 0;
+#X connect 127 0 128 0;
+#X connect 128 0 129 0;
+#X connect 129 0 18 0;
+#X connect 130 0 131 0;
+#X connect 131 0 128 1;
+#X connect 132 0 126 0;
+#X connect 132 1 130 0;

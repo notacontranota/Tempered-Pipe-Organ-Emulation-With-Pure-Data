@@ -1,4 +1,4 @@
-#N canvas 301 90 1301 789 10;
+#N canvas 513 80 1301 677 10;
 #X obj -1040 118 tgl 15 1 s_principale16 r_principale16 principale_16'
 0 -10 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj -945 118 tgl 15 1 s_corno r_corno corno_inglese 0 -10 0 10 #fcfcfc
@@ -172,7 +172,7 @@
 #X connect 13 0 0 0;
 #X connect 14 0 2 0;
 #X restore -719 173 pd principale8;
-#N canvas 546 487 450 325 principale16 0;
+#N canvas 546 869 450 325 principale16 0;
 #X floatatom -905 75 5 0 0 0 - - -, f 5;
 #X obj -905 102 sel 0 1;
 #X obj -905 195 unpack f f f f f f f f f;
@@ -471,9 +471,6 @@
 #X text -1036 15 Here we define the registers and the combinations
 among them. When we use more than one register at once \, the corresponding
 harmonics must be summed together.;
-#X text -88 673 Author: Nicola Simoni (nicola.simoni.89@gmail.com)
-;
-#X text -93 656 Project: Pipe Organ Emulation with Pure Data;
 #X connect 13 0 25 0;
 #X connect 14 0 26 0;
 #X connect 15 0 27 0;

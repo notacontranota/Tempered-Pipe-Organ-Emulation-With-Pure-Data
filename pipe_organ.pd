@@ -85,8 +85,8 @@ f 5;
 #000000 0;
 #X obj 554 339 hsl 128 15 0 127 0 1 s_lfo_user r_lfo empty -2 -8 0
 10 #fcfcfc #000000 #000000 0 1;
-#X obj 533 75 cnv 15 176 216 empty empty Reverberancia 20 12 0 18 #a19383
-#000000 0;
+#X obj 533 75 cnv 15 176 216 empty empty Reverberación 20 12 0 18
+#a19383 #000000 0;
 #X obj 553 141 hsl 128 15 0 127 0 1 s_room_user r_room Tamaño\ de\ sala
 -2 -8 0 10 #fcfcfc #000000 #000000 8000 1;
 #X obj 553 181 hsl 128 15 0 127 0 1 s_damping_user r_damping Atenuación
